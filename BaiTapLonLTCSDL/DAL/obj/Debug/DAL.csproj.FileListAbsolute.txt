@@ -1,0 +1,4 @@
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.dll
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.pdb
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.dll
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.pdb
