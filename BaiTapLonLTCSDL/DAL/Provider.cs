@@ -13,6 +13,74 @@ namespace DAL
     
     public class Provider
     {
+<<<<<<< HEAD
       
+=======
+        string cnstr = "";
+        SqlConnection cn;
+        public Provider()
+        {
+            cnstr = ConfigurationManager.ConnectionStrings["cnstr"].ConnectionString;
+            cn = new SqlConnection(cnstr);
+        }
+        private void Connect()
+        {
+            try
+            {
+                if (cn != null && cn.State != ConnectionState.Open)
+                    cn.Open();
+            }
+            catch(SqlException p)
+            {
+
+                throw p;
+            }
+        }
+        private void Disconnect()
+        {
+            if (cn != null && cn.State == ConnectionState.Open)
+                cn.Close();
+        }
+        public SqlDataReader View(string sql)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                return cmd.ExecuteReader();
+            }
+            catch(SqlException p)
+            {
+                throw p;
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
+        public int ExecNonQuery(string sql, CommandType type, List<SqlParameter> paras)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                if (paras != null)
+                {
+                    foreach (SqlParameter para in paras)
+                    {
+                        cmd.Parameters.Add(para);
+                    }
+                }
+                cmd.CommandType = type;
+                return cmd.ExecuteNonQuery();
+            }
+            catch (SqlException p)
+            {
+                throw p;
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
+>>>>>>> 656b1b43b9c1ef0a02fb8c8c58f7f4d17b88ff61
     }
 }
