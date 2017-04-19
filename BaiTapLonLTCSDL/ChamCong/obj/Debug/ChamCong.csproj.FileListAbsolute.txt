@@ -33,3 +33,14 @@ D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.
 D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
 D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
 D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
