@@ -51,7 +51,7 @@ namespace DAL
                 Disconnect();
             }
         }
-        public int Add(string sql, CommandType type, List<SqlParameter> paras)
+        public int ExecNonQuery(string sql, CommandType type, List<SqlParameter> paras)
         {
             try
             {
