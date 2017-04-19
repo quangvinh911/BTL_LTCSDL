@@ -1,5 +1,0 @@
-C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\BUS.dll
-C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\BUS.pdb
-C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
-C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BUS\obj\Debug\BUS.dll
-C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BUS\obj\Debug\BUS.pdb
