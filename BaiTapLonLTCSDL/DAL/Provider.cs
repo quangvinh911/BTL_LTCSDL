@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
+
 using System.Data.SqlClient;
+using System.Data;
 using System.Configuration;
+
 namespace DAL
 {
+    
     public class Provider
     {
+<<<<<<< HEAD
+      
+=======
         string cnstr = "";
         SqlConnection cn;
         public Provider()
@@ -75,5 +81,6 @@ namespace DAL
                 Disconnect();
             }
         }
+>>>>>>> 656b1b43b9c1ef0a02fb8c8c58f7f4d17b88ff61
     }
 }
