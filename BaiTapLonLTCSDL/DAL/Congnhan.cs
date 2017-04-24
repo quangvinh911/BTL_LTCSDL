@@ -23,7 +23,7 @@ namespace DAL
                 SqlDataReader dr = p.View(sql);
                 if (dr != null)
                 {
-                    string MaCN, Ho, Ten, NoiSinh, DanToc, TonGiao, QueQuan, DCThuongTru, NoiOHienNay, Email, TTHonNhan, MaCV, NoiLamViec, TrinhDoVanHoa, MaLoaiCV, MaPhuCap, TaiKhoanNganHang, NoiCapCMND,
+                    string MaCN, Ho, Ten, NoiSinh, DanToc, TonGiao, QueQuan, DCThuongTru, NoiOHienNay, Email, TTHonNhan, MaCV, NoiLamViec,TrinhDoVanHoa,MaHeSoLuong,MaLoaiCV, MaPhuCap, TaiKhoanNganHang, NoiCapCMND,
                       Hinh, QuocTich, MaBHYT, MaBHXH;
                     bool GioiTinh, TinhTrang;
                     int CMND, DienThoaiNha, DienThoaiDD;
@@ -46,24 +46,25 @@ namespace DAL
                         DienThoaiDD = dr.GetInt32(13) ;
                         Email = dr.GetString(14);
                         TTHonNhan = dr.GetString(15);
-                        MaCV = dr.GetString(16);
-                        NgayTuyenDung = dr.GetDateTime(17);
-                        NoiLamViec = dr.GetString(18);
-                        TrinhDoVanHoa = dr.GetString(19);
-                        MaLoaiCV = dr.GetString(20);
+                        NgayTuyenDung = dr.GetDateTime(16);
+                        NoiLamViec = dr.GetString(17);
+                        TrinhDoVanHoa = dr.GetString(18);
+                        MaHeSoLuong = dr.GetString(19);
+                        MaCV = dr.GetString(20);
                         MaPhuCap = dr.GetString(21);
-                        TaiKhoanNganHang = dr.GetString(22);
-                        NoiCapCMND = dr.GetString(23);
-                        NgayCapCMND = dr.GetDateTime(24);
-                        Hinh = dr.GetString(25);
-                        TinhTrang = dr.GetBoolean(26);
-                        QuocTich = dr.GetString(27);
-                        MaBHYT = dr.GetString(28);
-                        MaBHXH = dr.GetString(29);
+                        MaLoaiCV = dr.GetString(22);
+                        TaiKhoanNganHang = dr.GetString(23);
+                        NoiCapCMND = dr.GetString(24);
+                        NgayCapCMND = dr.GetDateTime(25);
+                        Hinh = dr.GetString(26);
+                        TinhTrang = dr.GetBoolean(27);
+                        QuocTich = dr.GetString(28);
+                        MaBHYT = dr.GetString(29);
+                        MaBHXH = dr.GetString(30);
                         CongNhan congnhan = new CongNhan(MaCN, Ho, Ten, GioiTinh, NgaySinh, NoiSinh,
                         CMND, DanToc, TonGiao, QueQuan, DCThuongTru, NoiOHienNay,
-                        DienThoaiNha, DienThoaiDD, Email, TTHonNhan, MaCV, NgayTuyenDung,
-                        NoiLamViec, TrinhDoVanHoa, MaLoaiCV, MaPhuCap, TaiKhoanNganHang,
+                        DienThoaiNha, DienThoaiDD, Email, TTHonNhan, NgayTuyenDung,
+                        NoiLamViec, TrinhDoVanHoa,MaCV,MaHeSoLuong, MaPhuCap,MaLoaiCV ,TaiKhoanNganHang,
                         NoiCapCMND, NgayCapCMND, Hinh, TinhTrang, QuocTich,
                         MaBHYT, MaBHXH);
                         list.Add(congnhan);
@@ -414,150 +415,373 @@ namespace DAL
                 throw p;
             }
         }
-        public int AddCongNhan(int i)
+        public int AddCongNhan(CongNhan congnhan)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@ho", congnhan.Ho));
+            paras.Add(new SqlParameter("@ten", congnhan.Ten));
+            paras.Add(new SqlParameter("@gioitinh", congnhan.GioiTinh));
+            paras.Add(new SqlParameter("@ngaysinh", congnhan.NgaySinh));
+            paras.Add(new SqlParameter("@noisinh", congnhan.NoiSinh));
+            paras.Add(new SqlParameter("@cmnd", congnhan.CMND));
+            paras.Add(new SqlParameter("@dantoc", congnhan.DanToc));
+            paras.Add(new SqlParameter("@tongiao", congnhan.TonGiao));
+            paras.Add(new SqlParameter("@quequan", congnhan.QueQuan));
+            paras.Add(new SqlParameter("@dcthuongtru", congnhan.DCThuongTru));
+            paras.Add(new SqlParameter("@noiohiennay", congnhan.NoiOHienNay));
+            paras.Add(new SqlParameter("@dienthoainha", congnhan.DienThoaiNha));
+            paras.Add(new SqlParameter("@dienthoaidd", congnhan.DienThoaiDD));
+            paras.Add(new SqlParameter("@email", congnhan.Email));
+            paras.Add(new SqlParameter("@ttranghonnhan", congnhan.TTHonNhan));
+            paras.Add(new SqlParameter("@ngaytuyendung", congnhan.NgayTuyenDung));
+            paras.Add(new SqlParameter("@noilamviec", congnhan.NoiLamViec));
+            paras.Add(new SqlParameter("@trinhdovanhoa", congnhan.TrinhDoVanHoa));
+            paras.Add(new SqlParameter("@mahesoluong", congnhan.MaHeSoLuong));
+            paras.Add(new SqlParameter("@machucvu", congnhan.MaCV));
+            paras.Add(new SqlParameter("@maphucap", congnhan.MaPhuCap));
+            paras.Add(new SqlParameter("@maloaicongviec", congnhan.MaLoaiCV));
+            paras.Add(new SqlParameter("@taikhoangnganhang", congnhan.TaiKhoanNganHang));
+            paras.Add(new SqlParameter("@ngaycapcmnd", congnhan.NgayCapCMND));
+            paras.Add(new SqlParameter("@noicapcmnd", congnhan.NoiCapCMND));
+            paras.Add(new SqlParameter("@hinh", congnhan.Hinh));
+            paras.Add(new SqlParameter("@tinhtranglamviec", congnhan.TinhTrang));
+            paras.Add(new SqlParameter("@quoctich", congnhan.QuocTich));
+            paras.Add(new SqlParameter("@mabhyt", congnhan.MaBHYT));
+            paras.Add(new SqlParameter("@mabhxh", congnhan.MaBHXH));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddChucVu(ChucVu chucvu)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
+            paras.Add(new SqlParameter("@tenchucvu", chucvu.TenChucVu));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddCaLamViec(CaLamViec calamviec)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            paras.Add(new SqlParameter("@tencalamviec", calamviec.TenCa));
+            paras.Add(new SqlParameter("@giobatdau", calamviec.GioBatDau));
+            paras.Add(new SqlParameter("@gioketthuc", calamviec.GioKetThuc));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddLich(Lich lich)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            paras.Add(new SqlParameter("@1", lich.n1));
+            paras.Add(new SqlParameter("@2", lich.n2));
+            paras.Add(new SqlParameter("@3", lich.n3));
+            paras.Add(new SqlParameter("@4", lich.n4));
+            paras.Add(new SqlParameter("@5", lich.n5));
+            paras.Add(new SqlParameter("@6", lich.n6));
+            paras.Add(new SqlParameter("@7", lich.n7));
+            paras.Add(new SqlParameter("@8", lich.n8));
+            paras.Add(new SqlParameter("@9", lich.n9));
+            paras.Add(new SqlParameter("@10", lich.n10));
+            paras.Add(new SqlParameter("@11", lich.n11));
+            paras.Add(new SqlParameter("@12", lich.n12));
+            paras.Add(new SqlParameter("@13", lich.n13));
+            paras.Add(new SqlParameter("@14", lich.n14));
+            paras.Add(new SqlParameter("@15", lich.n15));
+            paras.Add(new SqlParameter("@16", lich.n16));
+            paras.Add(new SqlParameter("@17", lich.n17));
+            paras.Add(new SqlParameter("@18", lich.n18));
+            paras.Add(new SqlParameter("@19", lich.n19));
+            paras.Add(new SqlParameter("@20", lich.n20));
+            paras.Add(new SqlParameter("@21", lich.n21));
+            paras.Add(new SqlParameter("@22", lich.n22));
+            paras.Add(new SqlParameter("@23", lich.n23));
+            paras.Add(new SqlParameter("@24", lich.n24));
+            paras.Add(new SqlParameter("@25", lich.n25));
+            paras.Add(new SqlParameter("@26", lich.n26));
+            paras.Add(new SqlParameter("@27", lich.n27));
+            paras.Add(new SqlParameter("@28", lich.n28));
+            paras.Add(new SqlParameter("@29", lich.n29));
+            paras.Add(new SqlParameter("@30", lich.n30));
+            paras.Add(new SqlParameter("@31", lich.n31));
+            paras.Add(new SqlParameter("@Thang", lich.Thang));
+            paras.Add(new SqlParameter("@Nam", lich.Nam));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddGioLamViec(GioLamViec giolamviec)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@macalamviec", giolamviec.MaCaLV));
+            paras.Add(new SqlParameter("@giotoi", giolamviec.GioToi));
+            paras.Add(new SqlParameter("@thu", giolamviec.Thu));
+            paras.Add(new SqlParameter("@giotoi", giolamviec.GioToi));
+            paras.Add(new SqlParameter("@ditre", giolamviec.DiTre));
+            paras.Add(new SqlParameter("@ngaythangnam", giolamviec.NgayThangNam));
+            paras.Add(new SqlParameter("@macn", giolamviec.MaCN));
+            paras.Add(new SqlParameter("@magiolamviec", giolamviec.MaGioLamViec));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddHeSoLuong(HeSoLuong hsl)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@mahsl", hsl.MaHSL));
+            paras.Add(new SqlParameter("@tenhesoluong", hsl.TenHeSoLuong));
+            paras.Add(new SqlParameter("@hesoluong", hsl.HeSL));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddLoaiCongViec(LoaiCongViec loaicongviec)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@maloaicongviec",loaicongviec.MaLoaiCV));
+            paras.Add(new SqlParameter("@tenloaicongviec", loaicongviec.TenLCV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddCongNhan(int i)
+        public int AddHopDong(HopDong hopdong)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@mahopdong",hopdong.MaHD));
+            paras.Add(new SqlParameter("@loaihopdong", hopdong.LoaiHopDong));
+            paras.Add(new SqlParameter("@kyhan", hopdong.KyHan));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int AddKyHopDong(KyHopDong kyhopdong)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@mahd",kyhopdong.MaHD));
+            paras.Add(new SqlParameter("@tungay", kyhopdong.TuNgay));
+            paras.Add(new SqlParameter("@denngay", kyhopdong.DenNgay));
+            paras.Add(new SqlParameter("@ngaykyhopdong", kyhopdong.NgayKyHD));
+            paras.Add(new SqlParameter("@dieukhoan", kyhopdong.DieuKhoan));
+            paras.Add(new SqlParameter("@macn", kyhopdong.MaCN));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int AddLuong(Luong luong)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@thang",luong.Thang));
+            paras.Add(new SqlParameter("@nam", luong.Nam));
+            paras.Add(new SqlParameter("@macn", luong.MaCN));
+            paras.Add(new SqlParameter("@mahesoluong", luong.MaHSL));
+            paras.Add(new SqlParameter("@magiolamviec", luong.MaGioLamViec));
+            paras.Add(new SqlParameter("@maphucap", luong.MaPhuCap));
+            paras.Add(new SqlParameter("@tong", luong.TienLuong));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int AddPhuCap(PhuCap phucap)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@maphucap",phucap.MaPhuCap));
+            paras.Add(new SqlParameter("@tenphucap", phucap.TenPhuCap));
+            paras.Add(new SqlParameter("@sotienphucap", phucap.SoTienPhuCap));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int AddTaiKhoan(TaiKhoan taikhoan)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@mataikhoan",taikhoan.MaTaiKhoan));
+            paras.Add(new SqlParameter("@matkhau",taikhoan.MatKhau));
+            paras.Add(new SqlParameter("@phanquyen", taikhoan.PhanQuyen));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int UpdateCongNhan(CongNhan congnhan)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
-        }
-        public int UpdateCongNhan(int i)
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+    }
+        public int UpdateChucVu(ChucVu chucvu)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
+            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int UpdateCaLamViec(CaLamViec calamviec)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateCongNhan(int i)
+        public int UpdateGioLamViec(GioLamViec giolamviec)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            paras.Add(new SqlParameter("magiolamviec", giolamviec.MaGioLamViec));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdateLich(Lich lich)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdateHeSoLuong(HeSoLuong hesoluong)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mahsl",hesoluong.MaHSL));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdateLoaiCongViec(LoaiCongViec loaicongviec)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
-
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@maloaicongviec", loaicongviec.MaLoaiCV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdateHopDong(HopDong hopdong)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mahopdong", hopdong.MaHD));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdateLuong(Luong luong)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macn", luong.MaPhuCap));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdatePhuCap(PhuCap phucap)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@maphucap", phucap.MaPhuCap));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int UpdateTaiKhoan(TaiKhoan taikhoan)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mataikhoan", taikhoan.MaTaiKhoan));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(int i)
+        public int DeleteCongNhan(CongNhan congnhan)
         {
-            ist<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter());
-            p.Add(string sql, CommandType.StoredProcedure, paras);
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteChucVu(ChucVu chucvu)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
+            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteCaLamViec(CaLamViec calamviec)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteGioLamViec(GioLamViec giolamviec)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("magiolamviec", giolamviec.MaGioLamViec));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteLich(Lich lich)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            paras.Add(new SqlParameter("@macn", lich.MaCN));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteHeSoLuong(HeSoLuong hesoluong)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mahsl", hesoluong.MaHSL));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteLoaiCongViec(LoaiCongViec loaicongviec)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@maloaicongviec", loaicongviec.MaLoaiCV));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteHopDong(HopDong hopdong)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mahopdong", hopdong.MaHD));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteLuong(Luong luong)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macn", luong.MaPhuCap));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeletePhuCap(PhuCap phucap)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@maphucap", phucap.MaPhuCap));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteTaiKhoan(TaiKhoan taikhoan)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mataikhoan", taikhoan.MaTaiKhoan));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
     }
 }
