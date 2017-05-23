@@ -3,3 +3,8 @@ C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DTO.pdb
 C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DTO\obj\Debug\DTO.dll
 C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DTO\obj\Debug\DTO.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DTO.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DTO.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\DTO\obj\Debug\DTO.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\DTO\obj\Debug\DTO.pdb

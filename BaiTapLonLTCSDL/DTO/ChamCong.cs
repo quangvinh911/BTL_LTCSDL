@@ -7,7 +7,7 @@ using System.Configuration;
 
 namespace DTO
 {
-    public class CaLamViec
+         public class CaLamViec
         {
             public string MaCaLV { get; set; }
             public string TenCa { get; set; }
@@ -23,7 +23,7 @@ namespace DTO
             }
         }
 
-        public class ChucVu
+         public class ChucVu
         {
             public string MaCV { get; set; }
             public string TenChucVu { get; set; }
@@ -35,44 +35,44 @@ namespace DTO
             }
         }
 
-    public class CongNhan
+         public class CongNhan
     {
         public string MaCN { get; set; }
         public string Ho { get; set; }
         public string Ten { get; set; }
-        public bool GioiTinh { get; set; }
+        public string GioiTinh { get; set; }
         public DateTime NgaySinh { get; set; }
         public string NoiSinh { get; set; }
-        public int CMND { get; set; }
+        public string CMND { get; set; }
         public string DanToc { get; set; }
         public string TonGiao { get; set; }
         public string QueQuan { get; set; }
         public string DCThuongTru { get; set; }
         public string NoiOHienNay { get; set; }
-        public int DienThoaiNha { get; set; }
-        public int DienThoaiDD { get; set; }
+        public string DienThoaiNha { get; set; }
+        public string DienThoaiDD { get; set; }
         public string Email { get; set; }
         public string TTHonNhan { get; set; }
-        public string MaCV { get; set; }
         public DateTime NgayTuyenDung { get; set; }
         public string NoiLamViec { get; set; }
         public string TrinhDoVanHoa { get; set; }
-        public string MaLoaiCV { get; set; }
+        public string MaHeSoLuong { get; set; }
+        public string MaCV { get; set; }
         public string MaPhuCap { get; set; }
         public string TaiKhoanNganHang { get; set; }
         public string NoiCapCMND { get; set; }
         public DateTime NgayCapCMND { get; set; }
         public string Hinh { get; set; }
-        public bool TinhTrang { get; set; }
+        public string TinhTrang { get; set; }
         public string QuocTich { get; set; }
         public string MaBHYT { get; set; }
         public string MaBHXH { get; set; }
 
-        public CongNhan(string MaCN, string Ho, string Ten, bool GioiTinh, DateTime NgaySinh, string NoiSinh,
-            int CMND, string DanToc, string TonGiao, string QueQuan, string DCThuongTru, string NoiOHienNay,
-            int DienThoaiNha, int DienThoaiDD, string Email, string TTHonNhan, string MaCV, DateTime NgayTuyenDung,
-            string NoiLamViec, string TrinhDoVanHoa, string MaLoaiCV, string MaPhuCap, string TaiKhoanNganHang,
-            string NoiCapCMND, DateTime NgayCapCMND, string Hinh, bool TinhTrang, string QuocTich,
+        public CongNhan(string MaCN, string Ho, string Ten, string GioiTinh, DateTime NgaySinh, string NoiSinh,
+            string CMND, string DanToc, string TonGiao, string QueQuan, string DCThuongTru, string NoiOHienNay,
+            string DienThoaiNha, string DienThoaiDD, string Email, string TTHonNhan, DateTime NgayTuyenDung,
+            string NoiLamViec, string TrinhDoVanHoa, string MaCV, string MaHeSoLuong,string MaPhuCap, string TaiKhoanNganHang,
+            string NoiCapCMND, DateTime NgayCapCMND, string Hinh, string TinhTrang, string QuocTich,
             string MaBHYT, string MaBHXH)
         {
             this.MaCN = MaCN;
@@ -95,7 +95,7 @@ namespace DTO
             this.NgayTuyenDung = NgayTuyenDung;
             this.NoiLamViec = NoiLamViec;
             this.TrinhDoVanHoa = TrinhDoVanHoa;
-            this.MaLoaiCV = MaLoaiCV;
+            this.MaHeSoLuong = MaHeSoLuong;
             this.MaPhuCap = MaPhuCap;
             this.TaiKhoanNganHang = TaiKhoanNganHang;
             this.NoiCapCMND = NoiCapCMND;
@@ -108,7 +108,7 @@ namespace DTO
         }
     }
 
-            public class GioLamViec
+         public class GioLamViec
             {
                 public string MaCaLV { get; set; }
                 public string Thu { get; set; }
@@ -132,29 +132,38 @@ namespace DTO
                     this.MaCN = MaCN;
                     this.MaGioLamViec = MaGioLamViec;
                 }
+               public GioLamViec(string MaCaLV, string Thu, TimeSpan GioToi, bool DiTre, DateTime NgayThangNam, string MaCN, string MaGioLamViec)
+                {
+                    this.MaCaLV = MaCaLV;
+                    this.Thu = Thu;
+                    this.GioToi = GioToi;
+                    this.DiTre = DiTre;
+                    this.NgayThangNam = NgayThangNam;
+                    this.MaCN = MaCN;
+                    this.MaGioLamViec = MaGioLamViec;
+        }
             }
 
-            public class HeSoLuong
+         public class HeSoLuong
             {
                 public string MaHSL { get; set; }
                 public string TenHeSoLuong { get; set; }
-                public int HeSL { get; set; }
+                public string HeSL { get; set; }
 
-                public HeSoLuong (string MaHSL, string TenHeSoLuong, int HeSL)
+                public HeSoLuong (string MaHSL, string TenHeSoLuong, string HeSL)
                 {
                     this.MaHSL = MaHSL;
                     this.TenHeSoLuong = TenHeSoLuong;
                     this.HeSL = HeSL;
                 }
             }
-
-            public class HopDong
+         public class HopDong
             {
                 public string MaHD { get; set; }
                 public string LoaiHopDong { get; set; }
-                public int KyHan { get; set; }
+                public string KyHan { get; set; }
 
-                public HopDong (string MaHD, string LoaiHopDong, int KyHan)
+                public HopDong (string MaHD, string LoaiHopDong, string KyHan)
                 {
                     this.MaHD = MaHD;
                     this.LoaiHopDong = LoaiHopDong;
@@ -162,7 +171,7 @@ namespace DTO
                 }
             }
 
-            public class KyHopDong
+         public class KyHopDong
             {
                 public string MaHD { get; set; }
                 public DateTime TuNgay { get; set; }
@@ -182,7 +191,7 @@ namespace DTO
                 }
             }
 
-            public class Lich
+         public class Lich
             {
                 public string MaCN { get; set; }
                 public bool n1 { get; set; }
@@ -263,7 +272,7 @@ namespace DTO
                }
             }
 
-            public class LoaiCongViec
+         public class LoaiCongViec
             {
                 public string MaLoaiCV { get; set; }
                 public string TenLCV { get; set; }
@@ -275,21 +284,21 @@ namespace DTO
                 }
             }
 
-            public class Luong
+         public class Luong
             {
-                public string MaLuong { get; set; }
+                public string MaCN { get; set; }
                 public string MaHSL { get; set; }
-                public string MaGioLamViec { get; set; }
+                public string GioLamViec { get; set; }
                 public string MaPhuCap { get; set; }
                 public int TienLuong { get; set; }
                 public int Thang { get; set; }
                 public int Nam { get; set; }
 
-                public Luong (string MaLuong, string MaHSL, string MaGioLamViec, string MaPhuCap, int TienLuong, int Thang, int Nam)
+                public Luong (string MaCN, string MaHSL, string GioLamViec, string MaPhuCap, int TienLuong, int Thang, int Nam)
                 {
-                    this.MaLuong = MaLuong;
+                    this.MaCN=MaCN;
                     this.MaHSL = MaHSL;
-                    this.MaGioLamViec = MaGioLamViec;
+                    this.GioLamViec = GioLamViec;
                     this.MaPhuCap = MaPhuCap;
                     this.TienLuong = TienLuong;
                     this.Thang = Thang;
@@ -297,7 +306,7 @@ namespace DTO
                 }
             }
 
-            public class PhuCap
+         public class PhuCap
             {
                 public string MaPhuCap { get; set; }
                 public string TenPhuCap { get; set; }
@@ -312,7 +321,7 @@ namespace DTO
             }
 
 
-        public class TaiKhoan
+         public class TaiKhoan
         {
             public string MaTaiKhoan { get; set; }
             public string MatKhau { get; set; }
@@ -325,4 +334,28 @@ namespace DTO
                 this.PhanQuyen = PhanQuyen;
             }
         }
+         public class ViewKyHopDong
+         {
+             public string MaHD { get; set; }
+             public string LoaiHopDong { get; set; }
+             public String KyHan { get; set; }
+             public string MaCN { get; set; }
+             public string TenCN { get; set; }
+             public DateTime TuNgay { get; set; }
+             public DateTime DenNgay { get; set; }
+             public DateTime NgayKy { get; set; }
+             public string DieuKhoan { get; set; }
+             public ViewKyHopDong(string MaHD,string LoaiHopDong,string KyHan,string MaCN,string TenCN,DateTime TuNgay,DateTime DenNgay,DateTime NgayKy,string DieuKhoan)
+             {
+                    this.MaHD = MaHD;
+                    this.LoaiHopDong = LoaiHopDong;
+                    this.KyHan = KyHan;
+                    this.MaCN = MaCN;
+                    this.TenCN = TenCN;
+                    this.TuNgay = TuNgay;
+                    this.DenNgay = DenNgay;
+                    this.NgayKy = NgayKy;
+                    this.DieuKhoan = DieuKhoan;
+             }
+    }
 }

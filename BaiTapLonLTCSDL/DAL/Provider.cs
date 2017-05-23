@@ -39,6 +39,7 @@ namespace DAL
         {
             try
             {
+                Connect();
                 SqlCommand cmd = new SqlCommand(sql, cn);
                 return cmd.ExecuteReader();
             }
@@ -48,13 +49,14 @@ namespace DAL
             }
             finally
             {
-                Disconnect();
+                //Disconnect();
             }
         }
         public int ExecNonQuery(string sql, CommandType type, List<SqlParameter> paras)
         {
             try
             {
+                Connect();
                 SqlCommand cmd = new SqlCommand(sql, cn);
                 if (paras != null)
                 {

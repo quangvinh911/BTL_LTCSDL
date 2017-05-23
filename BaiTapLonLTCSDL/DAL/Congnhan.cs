@@ -23,52 +23,50 @@ namespace DAL
                 SqlDataReader dr = p.View(sql);
                 if (dr != null)
                 {
-                    string MaCN, Ho, Ten, NoiSinh, DanToc, TonGiao, QueQuan, DCThuongTru, NoiOHienNay, Email, TTHonNhan, MaCV, NoiLamViec,TrinhDoVanHoa,MaHeSoLuong,MaLoaiCV, MaPhuCap, TaiKhoanNganHang, NoiCapCMND,
-                      Hinh, QuocTich, MaBHYT, MaBHXH;
-                    bool GioiTinh, TinhTrang;
-                    int CMND, DienThoaiNha, DienThoaiDD;
+                    string MaCN, Ho, Ten, NoiSinh, DanToc, TonGiao, QueQuan, DCThuongTru, NoiOHienNay, Email, TTHonNhan, MaCV, NoiLamViec, TrinhDoVanHoa, MaHeSoLuong, MaPhuCap, TaiKhoanNganHang, NoiCapCMND,
+                      Hinh, QuocTich, MaBHYT, MaBHXH, GioiTinh, CMND, DienThoaiNha, DienThoaiDD, TinhTrang;
                     DateTime NgayTuyenDung, NgayCapCMND, NgaySinh;
                     while (dr.Read())
                     {
                         MaCN = dr.GetString(0);
                         Ho = dr.GetString(1);
                         Ten = dr.GetString(2);
-                        GioiTinh = dr.GetBoolean(3);
+                        GioiTinh = dr.GetString(3);
                         NgaySinh = dr.GetDateTime(4);
                         NoiSinh = dr.GetString(5);
-                        CMND = dr.GetInt32(6);
+                        CMND = dr.GetString(6);
                         DanToc = dr.GetString(7);
                         TonGiao = dr.GetString(8);
                         QueQuan = dr.GetString(9);
                         DCThuongTru = dr.GetString(10);
                         NoiOHienNay = dr.GetString(11);
-                        DienThoaiNha = dr.GetInt32(12);
-                        DienThoaiDD = dr.GetInt32(13) ;
+                        DienThoaiNha = dr.GetString(12);
+                        DienThoaiDD = dr.GetString(13);
                         Email = dr.GetString(14);
                         TTHonNhan = dr.GetString(15);
                         NgayTuyenDung = dr.GetDateTime(16);
                         NoiLamViec = dr.GetString(17);
                         TrinhDoVanHoa = dr.GetString(18);
                         MaHeSoLuong = dr.GetString(19);
-                        MaCV = dr.GetString(20);
+                        MaCV = dr.GetString(31);
                         MaPhuCap = dr.GetString(21);
-                        MaLoaiCV = dr.GetString(22);
-                        TaiKhoanNganHang = dr.GetString(23);
+                        TaiKhoanNganHang = dr.GetString(22);
+                        NgayCapCMND = dr.GetDateTime(23);
                         NoiCapCMND = dr.GetString(24);
-                        NgayCapCMND = dr.GetDateTime(25);
-                        Hinh = dr.GetString(26);
-                        TinhTrang = dr.GetBoolean(27);
-                        QuocTich = dr.GetString(28);
-                        MaBHYT = dr.GetString(29);
-                        MaBHXH = dr.GetString(30);
+                        Hinh = dr.GetString(25);
+                        TinhTrang = dr.GetString(26);
+                        QuocTich = dr.GetString(27);
+                        MaBHYT = dr.GetString(28);
+                        MaBHXH = dr.GetString(29);
                         CongNhan congnhan = new CongNhan(MaCN, Ho, Ten, GioiTinh, NgaySinh, NoiSinh,
                         CMND, DanToc, TonGiao, QueQuan, DCThuongTru, NoiOHienNay,
                         DienThoaiNha, DienThoaiDD, Email, TTHonNhan, NgayTuyenDung,
-                        NoiLamViec, TrinhDoVanHoa,MaCV,MaHeSoLuong, MaPhuCap,MaLoaiCV ,TaiKhoanNganHang,
+                        NoiLamViec, TrinhDoVanHoa,MaCV,MaHeSoLuong, MaPhuCap,TaiKhoanNganHang,
                         NoiCapCMND, NgayCapCMND, Hinh, TinhTrang, QuocTich,
                         MaBHYT, MaBHXH);
                         list.Add(congnhan);
                     }
+                    dr.Close();
                 }
                 return list;
             }
@@ -176,8 +174,8 @@ namespace DAL
                         n29 = dr.GetBoolean(29);
                         n30 = dr.GetBoolean(30);
                         n31 = dr.GetBoolean(31);
-                        Thang = dr.GetInt32(32);
-                        Nam = dr.GetInt32(33);
+                        Thang = dr.GetInt32(33);
+                        Nam = dr.GetInt32(34);
                         Lich lic = new Lich(MaCN, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16, n17, n18, n19, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n30, n31, Thang, Nam);
                         list.Add(lic);
                     }
@@ -231,13 +229,12 @@ namespace DAL
                 SqlDataReader dr = p.View(sql);
                 if (dr != null)
                 {
-                    string MaHSL, TenHeSoLuong;
-                    int HeSL;
+                    string MaHSL, TenHeSoLuong,HeSL;
                     while (dr.Read())
                     {
                         MaHSL=dr.GetString(0);
                         TenHeSoLuong=dr.GetString(1);
-                        HeSL = dr.GetInt32(2);
+                        HeSL = dr.GetString(2);
                         HeSoLuong hsl = new HeSoLuong(MaHSL, TenHeSoLuong, HeSL);
                         list.Add(hsl);
                     }
@@ -283,13 +280,12 @@ namespace DAL
                 if (dr != null)
                 {
                     string MaHD;
-                    string LoaiHopDong;
-                    int KyHan;
+                    string LoaiHopDong,KyHan;
                     while (dr.Read())
                     {
                         MaHD=dr.GetString(0);
                         LoaiHopDong=dr.GetString(1);
-                        KyHan = dr.GetInt32(3);
+                        KyHan = dr.GetString(2);
                         HopDong hd = new HopDong(MaHD, LoaiHopDong, KyHan);
                         list.Add(hd);
                     }
@@ -301,20 +297,23 @@ namespace DAL
                 throw p;
             }
         }
-        public List<KyHopDong> ViewKyHopDong(string sql)
+        public List<ViewKyHopDong> ViewKyHopDong(string sql)
         {
             try
             {
-                List<KyHopDong> list = new List<KyHopDong>();
+                List<ViewKyHopDong> list = new List<ViewKyHopDong>();
                 SqlDataReader dr = p.View(sql);
                 if (dr != null)
                 {
                     string MaHD;
+                    string LoaiHopDong;
+                    string KyHan;
                     DateTime TuNgay;
                     DateTime DenNgay;
                     DateTime NgayKyHD;
                     string DieuKhoan;
                     string MaCN;
+                    string TenCN;
                     while (dr.Read())
                     {
                         MaHD = dr.GetString(0);
@@ -323,7 +322,10 @@ namespace DAL
                         NgayKyHD = dr.GetDateTime(3);
                         DieuKhoan = dr.GetString(4);
                         MaCN = dr.GetString(5);
-                        KyHopDong khd= new KyHopDong(MaHD,TuNgay,DenNgay,NgayKyHD,DieuKhoan,MaCN);
+                        LoaiHopDong = dr.GetString(6);
+                        KyHan = dr.GetString(7);
+                        TenCN = dr.GetString(8);
+                        ViewKyHopDong khd = new ViewKyHopDong(MaHD, LoaiHopDong, KyHan, MaCN, TenCN, TuNgay, DenNgay, NgayKyHD, DieuKhoan);
                         list.Add(khd);
                     }
                 }
@@ -440,7 +442,6 @@ namespace DAL
             paras.Add(new SqlParameter("@mahesoluong", congnhan.MaHeSoLuong));
             paras.Add(new SqlParameter("@machucvu", congnhan.MaCV));
             paras.Add(new SqlParameter("@maphucap", congnhan.MaPhuCap));
-            paras.Add(new SqlParameter("@maloaicongviec", congnhan.MaLoaiCV));
             paras.Add(new SqlParameter("@taikhoangnganhang", congnhan.TaiKhoanNganHang));
             paras.Add(new SqlParameter("@ngaycapcmnd", congnhan.NgayCapCMND));
             paras.Add(new SqlParameter("@noicapcmnd", congnhan.NoiCapCMND));
@@ -512,12 +513,12 @@ namespace DAL
             paras.Add(new SqlParameter("@macalamviec", giolamviec.MaCaLV));
             paras.Add(new SqlParameter("@giotoi", giolamviec.GioToi));
             paras.Add(new SqlParameter("@thu", giolamviec.Thu));
-            paras.Add(new SqlParameter("@giotoi", giolamviec.GioToi));
+            //paras.Add(new SqlParameter("@giotoi", giolamviec.GioToi));
             paras.Add(new SqlParameter("@ditre", giolamviec.DiTre));
             paras.Add(new SqlParameter("@ngaythangnam", giolamviec.NgayThangNam));
             paras.Add(new SqlParameter("@macn", giolamviec.MaCN));
             paras.Add(new SqlParameter("@magiolamviec", giolamviec.MaGioLamViec));
-            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+            return p.ExecNonQuery("AddGioLamViec", CommandType.StoredProcedure, paras);
         }
         public int AddHeSoLuong(HeSoLuong hsl)
         {
@@ -553,16 +554,11 @@ namespace DAL
             paras.Add(new SqlParameter("@macn", kyhopdong.MaCN));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int AddLuong(Luong luong)
+        public int AddLuong(string macn,DateTime dt)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@thang",luong.Thang));
-            paras.Add(new SqlParameter("@nam", luong.Nam));
-            paras.Add(new SqlParameter("@macn", luong.MaCN));
-            paras.Add(new SqlParameter("@mahesoluong", luong.MaHSL));
-            paras.Add(new SqlParameter("@magiolamviec", luong.MaGioLamViec));
-            paras.Add(new SqlParameter("@maphucap", luong.MaPhuCap));
-            paras.Add(new SqlParameter("@tong", luong.TienLuong));
+            paras.Add(new SqlParameter("@macn",macn));
+            paras.Add(new SqlParameter("@datetime",dt));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int AddPhuCap(PhuCap phucap)
@@ -632,10 +628,24 @@ namespace DAL
             paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateGioLamViec(GioLamViec giolamviec)
+        public int UpdateGioLamViec(string maglv,TimeSpan giove)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("magiolamviec", giolamviec.MaGioLamViec));
+            paras.Add(new SqlParameter("magiolamviec", maglv));
+            paras.Add(new SqlParameter("magiolamviec",giove));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int UpdateGioLamViec1(GioLamViec glv)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macalamviec", glv.MaCaLV));
+            paras.Add(new SqlParameter("@giotoi", glv.GioToi));
+            paras.Add(new SqlParameter("@thu", glv.Thu));
+            paras.Add(new SqlParameter("@giove", glv.GioToi));
+            paras.Add(new SqlParameter("@ditre", glv.DiTre));
+            paras.Add(new SqlParameter("@ngaythangnam", glv.NgayThangNam));
+            paras.Add(new SqlParameter("@macn", glv.MaCN));
+            paras.Add(new SqlParameter("@magiolamviec", glv.MaGioLamViec));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int UpdateLich(Lich lich)
@@ -664,10 +674,10 @@ namespace DAL
             paras.Add(new SqlParameter("@mahopdong", hopdong.MaHD));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int UpdateLuong(Luong luong)
+        public int UpdateLuong(string macn)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@macn", luong.MaPhuCap));
+            paras.Add(new SqlParameter("@macn",macn));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int UpdatePhuCap(PhuCap phucap)
@@ -682,47 +692,27 @@ namespace DAL
             paras.Add(new SqlParameter("@mataikhoan", taikhoan.MaTaiKhoan));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteCongNhan(CongNhan congnhan)
+        public int UpdateKyHopDong(KyHopDong khd)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
-            paras.Add(new SqlParameter("@macn", congnhan.MaCN));
+            paras.Add(new SqlParameter("@mahd", khd.MaHD));
+            paras.Add(new SqlParameter("@tungay", khd.TuNgay));
+            paras.Add(new SqlParameter("@denngay", khd.DenNgay));
+            paras.Add(new SqlParameter("@ngaykyhopdong", khd.NgayKyHD));
+            paras.Add(new SqlParameter("@dieukhoan", khd.DieuKhoan));
+            paras.Add(new SqlParameter("@macn", khd.MaCN));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteChucVu(ChucVu chucvu)
+        public int DeleteCongNhan(string macn)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
-            paras.Add(new SqlParameter("@macv", chucvu.MaCV));
+            paras.Add(new SqlParameter("@macn",macn));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteChucVu(string macv)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@macv",macv));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int DeleteCaLamViec(CaLamViec calamviec)
@@ -733,10 +723,11 @@ namespace DAL
             paras.Add(new SqlParameter("@maclv", calamviec.MaCaLV));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteGioLamViec(GioLamViec giolamviec)
+        public int DeleteGioLamViec(string maglv,DateTime ngay)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("magiolamviec", giolamviec.MaGioLamViec));
+            paras.Add(new SqlParameter("@magiolamviec",maglv));
+            paras.Add(new SqlParameter("@ngaylamviec",ngay));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int DeleteLich(Lich lich)
@@ -747,10 +738,10 @@ namespace DAL
             paras.Add(new SqlParameter("@macn", lich.MaCN));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteHeSoLuong(HeSoLuong hesoluong)
+        public int DeleteHeSoLuong(string mahsl)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@mahsl", hesoluong.MaHSL));
+            paras.Add(new SqlParameter("@mahsl",mahsl));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int DeleteLoaiCongViec(LoaiCongViec loaicongviec)
@@ -759,10 +750,10 @@ namespace DAL
             paras.Add(new SqlParameter("@maloaicongviec", loaicongviec.MaLoaiCV));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteHopDong(HopDong hopdong)
+        public int DeleteHopDong(string mahd)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@mahopdong", hopdong.MaHD));
+            paras.Add(new SqlParameter("@mahopdong",mahd));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
         public int DeleteLuong(Luong luong)
@@ -771,16 +762,22 @@ namespace DAL
             paras.Add(new SqlParameter("@macn", luong.MaPhuCap));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeletePhuCap(PhuCap phucap)
+        public int DeletePhuCap(string mapc)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@maphucap", phucap.MaPhuCap));
+            paras.Add(new SqlParameter("@maphucap",mapc));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
-        public int DeleteTaiKhoan(TaiKhoan taikhoan)
+        public int DeleteTaiKhoan(string matk)
         {
             List<SqlParameter> paras = new List<SqlParameter>();
-            paras.Add(new SqlParameter("@mataikhoan", taikhoan.MaTaiKhoan));
+            paras.Add(new SqlParameter("@mataikhoan", matk));
+            return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
+        }
+        public int DeleteKyHopDong(string makhd)
+        {
+            List<SqlParameter> paras = new List<SqlParameter>();
+            paras.Add(new SqlParameter("@mahd",makhd));
             return p.ExecNonQuery("", CommandType.StoredProcedure, paras);
         }
     }
