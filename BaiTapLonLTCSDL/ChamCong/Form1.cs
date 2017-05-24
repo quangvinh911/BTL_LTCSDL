@@ -501,8 +501,8 @@ namespace ChamCong
 
         private void btBCNhansu_Click(object sender, EventArgs e)
         {
-            ReportDataSource rpdt = new ReportDataSource("CongNhan", cnb.ViewCongNhan("SELECT * FROM CongNhan, ChucVu WHERE CongNhan.MaCV = ChucVu.MaCV"));
-            reportViewer1.LocalReport.ReportPath = "ChamCongReport1.rdlc";
+            ReportDataSource rpdt = new ReportDataSource("DataSet1",cnb.ViewCongNhan("SELECT * FROM CongNhan, ChucVu WHERE CongNhan.MaCV = ChucVu.MaCV"));
+            reportViewer1.LocalReport.ReportPath = @"D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\ChamCongReport1.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(rpdt);
             reportViewer1.RefreshReport();

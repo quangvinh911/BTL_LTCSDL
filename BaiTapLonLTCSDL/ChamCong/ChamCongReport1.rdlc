@@ -61,7 +61,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ma NV</Value>
+                              <Value>MaCN</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -998,30 +998,6 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet2">
-      <Query>
-        <DataSourceName>Chamcong</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="MaCV">
-          <DataField>MaCV</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="TenChucVu">
-          <DataField>TenChucVu</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>Chamcong</rd:DataSetName>
-        <rd:SchemaPath>D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\Chamcong.xsd</rd:SchemaPath>
-        <rd:TableName>ChucVu</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>ChucVuTableAdapter</rd:TableAdapterName>
-      </rd:DataSetInfo>
-    </DataSet>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>Chamcong</DataSourceName>
