@@ -76,3 +76,6 @@ D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.pdb
 D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.pdb
 D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.cache
 D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
