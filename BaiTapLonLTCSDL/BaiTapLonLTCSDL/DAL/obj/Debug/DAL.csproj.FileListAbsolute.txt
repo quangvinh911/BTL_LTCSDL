@@ -1,0 +1,14 @@
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.dll
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.pdb
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.dll
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\BIN\DAL.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\DAL\obj\Debug\DAL.pdb

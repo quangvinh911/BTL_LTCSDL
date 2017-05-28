@@ -1,0 +1,129 @@
+D:\ChamCong\ChamCong\bin\Debug\ChamCong.exe.config
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+D:\ChamCong\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\BY\Desktop\LT\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\BY\Desktop\LT\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\BY\Desktop\LT\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\Huynh Son\Desktop\LTCSDL1\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+D:\Study\0_BaiTapLon\Lap trinh CSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+C:\Users\BY\Desktop\LT\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.dll
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.pdb
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.cache
+D:\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.pdb
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.cache
+D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
