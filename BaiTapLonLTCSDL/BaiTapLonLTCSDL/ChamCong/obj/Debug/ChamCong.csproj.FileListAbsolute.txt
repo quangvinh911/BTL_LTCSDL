@@ -127,3 +127,49 @@ C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug
 C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled
 C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
 C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.dll
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.dll
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\mscorlib.dll
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.dll
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.pdb
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.pdb
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.pdb
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\normidna.nlp
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\normnfc.nlp
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\normnfd.nlp
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\normnfkc.nlp
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\normnfkd.nlp
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.cache
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled
+C:\Users\icecr\Downloads\BTL_LTCSDL-master\BTL_LTCSDL-master\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe.config
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.exe
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.exe
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\ChamCong.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.dll
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\BUS.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DTO.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\bin\Debug\DAL.pdb
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csprojResolveAssemblyReference.cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.DangNhap.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Form1.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.Properties.Resources.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.ThemNhanVien.resources
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\ChamCong.csproj.GenerateResource.Cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.cache
+C:\Users\Quang Vinh\Downloads\BaiTapLonLTCSDL (1)\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\obj\Debug\RdlCompile.compiled

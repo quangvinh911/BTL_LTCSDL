@@ -68,8 +68,8 @@ namespace ChamCong
             txtTKnganhang.Text = dgvLoadcn.CurrentRow.Cells[22].Value.ToString();
             textBox58.Text = dgvLoadcn.CurrentRow.Cells[29].Value.ToString();
             textBox1.Text =dgvLoadcn.CurrentRow.Cells[29].Value.ToString();
-            if(dgvLoadcn.CurrentRow.Cells[26].Value.ToString()!="1")
-                picCongnhan.Image = Image.FromFile(dgvLoadcn.CurrentRow.Cells[26].Value.ToString());
+            //if(dgvLoadcn.CurrentRow.Cells[26].Value.ToString()!="1")
+            //    picCongnhan.Image = Image.FromFile(dgvLoadcn.CurrentRow.Cells[26].Value.ToString());
             picCongnhan.ImageLocation = dgvLoadcn.CurrentRow.Cells[26].Value.ToString();
             txtMahesoluong.Text = dgvLoadcn.CurrentRow.Cells[19].Value.ToString();
             txtNoiOHien.Text = dgvLoadcn.CurrentRow.Cells[11].Value.ToString();
