@@ -1,2 +1,2 @@
 # BaiTapLonLTCSDL
-Link video gioi thieu : https://youtu.be/fMoqCgZzGaY
+Link Youtube Video Giới Thiệu: https://youtu.be/fMoqCgZzGaY
