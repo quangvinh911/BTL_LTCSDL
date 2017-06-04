@@ -823,7 +823,7 @@ namespace ChamCong
         private void btBCNhansu_Click(object sender, EventArgs e)
         {
             ReportDataSource rpdt = new ReportDataSource("DataSet1",cnb.ViewCongNhan("SELECT * FROM CongNhan, ChucVu WHERE CongNhan.MaCV = ChucVu.MaCV"));
-            reportViewer1.LocalReport.ReportPath = @"D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\ChamCongReport1.rdlc";
+            reportViewer1.LocalReport.ReportPath = @"\..\BTL_LTCSDL\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\ChamCongReport1.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(rpdt);
             reportViewer1.RefreshReport();
@@ -862,8 +862,8 @@ namespace ChamCong
         private void btBCLuong_Click(object sender, EventArgs e)
         {
             ReportDataSource rpdt = new ReportDataSource("DataSet1",cnb.ViewLuong("SELECT * FROM Luong"));
-            ReportDataSource rpdt1 = new ReportDataSource("DataSet2",cnb.ViewCongNhan("SELECT *FROM CongNhan,ChucVu WHERE CongNhan.MaCV=ChucVu.MaCV"));
-            reportViewer1.LocalReport.ReportPath = @"D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\Luongreport.rdlc";
+            ReportDataSource rpdt1 = new ReportDataSource("DataSet2",cnb.ViewCongNhan("SELECT * FROM CongNhan,ChucVu WHERE CongNhan.MaCV=ChucVu.MaCV"));
+            reportViewer1.LocalReport.ReportPath = @"\..\BTL_LTCSDL\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\Luongreport.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(rpdt);
             reportViewer1.LocalReport.DataSources.Add(rpdt1);
@@ -873,7 +873,7 @@ namespace ChamCong
         private void btBCHD_Click(object sender, EventArgs e)
         {
             ReportDataSource rpdt = new ReportDataSource("DataSet1", cnb.ViewKyHopDong("SELECT KyHopDong.MaHD,KyHopDong.TuNgay,KyHopDong.DenNgay,Kyhopdong.NgayKyHD,KyHopDong.DieuKhoan,KyHopDong.MaNV,HopDong.LoaiHopDong,HopDong.KyHan,CongNhan.Ten FROM KyHopDong,HopDong,CongNhan WHERE KyHopDong.MaHD=HopDong.MaHD AND KyHopDong.MaNV=CongNhan.MaNV"));
-            reportViewer1.LocalReport.ReportPath = @"D:\LTCSDL\BTL_LTCSDL\BaiTapLonLTCSDL\ChamCong\Hopdongreport.rdlc";
+            reportViewer1.LocalReport.ReportPath = @"\..\BTL_LTCSDL\BaiTapLonLTCSDL\BaiTapLonLTCSDL\ChamCong\Hopdongreport.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(rpdt);
             reportViewer1.RefreshReport();
